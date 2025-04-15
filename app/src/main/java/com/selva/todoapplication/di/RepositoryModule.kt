@@ -1,7 +1,7 @@
 package com.selva.todoapplication.di
 
-import com.selva.todoapplication.data.local.TodoRepository
-import com.selva.todoapplication.data.local.TodoRepositoryImpl
+import com.selva.todoapplication.domain.TodoRepository
+import com.selva.todoapplication.data.repository.TodoRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

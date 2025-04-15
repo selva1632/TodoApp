@@ -1,7 +1,9 @@
-package com.selva.todoapplication.adapter
+package com.selva.todoapplication.presentation.adapter
 
 import androidx.recyclerview.widget.RecyclerView
 import com.selva.todoapplication.databinding.TodoViewHolderBinding
+import com.selva.todoapplication.domain.model.TodoItem
+import com.selva.todoapplication.presentation.listener.onTodoClickListener
 
 class TodoViewHolder(val binding: TodoViewHolderBinding) : RecyclerView.ViewHolder(binding.root) {
     fun bind(todoItem: TodoItem, eventListener: onTodoClickListener) {

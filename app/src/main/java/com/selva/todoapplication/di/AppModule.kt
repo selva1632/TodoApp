@@ -2,8 +2,8 @@ package com.selva.todoapplication.di
 
 import android.content.Context
 import androidx.room.Room
-import com.selva.todoapplication.data.local.TodoDao
-import com.selva.todoapplication.data.local.TodoDatabase
+import com.selva.todoapplication.data.local.dao.TodoDao
+import com.selva.todoapplication.data.local.database.TodoDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

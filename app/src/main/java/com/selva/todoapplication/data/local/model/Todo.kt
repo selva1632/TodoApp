@@ -1,4 +1,4 @@
-package com.selva.todoapplication.data.local
+package com.selva.todoapplication.data.local.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

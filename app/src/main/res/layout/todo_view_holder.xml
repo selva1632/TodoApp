@@ -6,7 +6,7 @@
 
         <variable
             name="bindingItem"
-            type="com.selva.todoapplication.adapter.TodoItem" />
+            type="com.selva.todoapplication.domain.model.TodoItem" />
     </data>
 
     <androidx.cardview.widget.CardView

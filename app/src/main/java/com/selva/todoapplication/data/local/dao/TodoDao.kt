@@ -1,4 +1,4 @@
-package com.selva.todoapplication.data.local
+package com.selva.todoapplication.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Update
 import androidx.room.Upsert
+import com.selva.todoapplication.data.local.model.Todo
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -18,7 +19,4 @@ interface TodoDao {
 
     @Delete
     suspend fun deleteTodo(todo: Todo)
-
-    @Update(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun updateTodo(todo: Todo)
 }

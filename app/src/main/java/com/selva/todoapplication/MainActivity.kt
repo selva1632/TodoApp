@@ -7,12 +7,13 @@ import android.widget.EditText
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.selva.todoapplication.adapter.TodoAdapter
-import com.selva.todoapplication.adapter.TodoItem
-import com.selva.todoapplication.adapter.onTodoClickListener
-import com.selva.todoapplication.adapter.toTodo
-import com.selva.todoapplication.data.local.Todo
+import com.selva.todoapplication.presentation.adapter.TodoAdapter
+import com.selva.todoapplication.domain.model.TodoItem
+import com.selva.todoapplication.presentation.listener.onTodoClickListener
+import com.selva.todoapplication.domain.model.toTodo
+import com.selva.todoapplication.data.local.model.Todo
 import com.selva.todoapplication.databinding.ActivityMainBinding
+import com.selva.todoapplication.presentation.viewmodel.TodoViewmodel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -34,7 +35,6 @@ class MainActivity : AppCompatActivity() {
             override fun onClickDelete(todoItem: TodoItem) {
                 viewmodel.deleteTodo(todoItem.toTodo())
             }
-
         }
     }
 
@@ -44,12 +44,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         with(binding) {
+            lifecycleOwner = this@MainActivity
+            vm = viewmodel
             todoRecyclerview.adapter = todoAdapter
             addTaskButton.setOnClickListener { showAddTodoDialog() }
-        }
-
-        viewmodel.todoItems.observe(this) {
-            todoAdapter.replaceItems(it)
         }
     }
 

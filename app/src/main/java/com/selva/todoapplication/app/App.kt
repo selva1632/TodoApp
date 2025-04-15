@@ -1,4 +1,4 @@
-package com.selva.todoapplication
+package com.selva.todoapplication.app
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

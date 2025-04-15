@@ -1,7 +1,9 @@
-package com.selva.todoapplication.data.local
+package com.selva.todoapplication.data.local.database
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
+import com.selva.todoapplication.data.local.dao.TodoDao
+import com.selva.todoapplication.data.local.model.Todo
 
 @Database(
     entities = [Todo::class],

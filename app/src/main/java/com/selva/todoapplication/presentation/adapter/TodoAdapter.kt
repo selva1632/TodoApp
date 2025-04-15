@@ -1,10 +1,12 @@
-package com.selva.todoapplication.adapter
+package com.selva.todoapplication.presentation.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.selva.todoapplication.databinding.TodoViewHolderBinding
+import com.selva.todoapplication.domain.model.TodoItem
+import com.selva.todoapplication.presentation.listener.onTodoClickListener
 
 class TodoAdapter(
     private val eventClickListener: onTodoClickListener

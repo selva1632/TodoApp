@@ -1,6 +1,6 @@
-package com.selva.todoapplication.adapter
+package com.selva.todoapplication.domain.model
 
-import com.selva.todoapplication.data.local.Todo
+import com.selva.todoapplication.data.local.model.Todo
 
 fun List<Todo>.toTodoItems(): List<TodoItem> {
     return map {

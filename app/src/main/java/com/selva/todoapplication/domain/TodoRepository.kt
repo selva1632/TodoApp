@@ -1,5 +1,6 @@
-package com.selva.todoapplication.data.local
+package com.selva.todoapplication.domain
 
+import com.selva.todoapplication.data.local.model.Todo
 import kotlinx.coroutines.flow.Flow
 
 interface TodoRepository {

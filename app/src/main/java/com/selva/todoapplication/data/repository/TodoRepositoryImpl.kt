@@ -1,5 +1,8 @@
-package com.selva.todoapplication.data.local
+package com.selva.todoapplication.data.repository
 
+import com.selva.todoapplication.data.local.model.Todo
+import com.selva.todoapplication.data.local.dao.TodoDao
+import com.selva.todoapplication.domain.TodoRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
