@@ -1,4 +1,4 @@
-package com.selva.todoapplication.presentation.listener
+package com.selva.todoapplication.ui.listener
 
 import com.selva.todoapplication.domain.model.TodoItem
 

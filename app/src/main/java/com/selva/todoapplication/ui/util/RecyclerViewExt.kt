@@ -1,9 +1,9 @@
-package com.selva.todoapplication.presentation.util
+package com.selva.todoapplication.ui.util
 
 import androidx.databinding.BindingAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.selva.todoapplication.domain.model.TodoItem
-import com.selva.todoapplication.presentation.adapter.TodoAdapter
+import com.selva.todoapplication.ui.adapter.TodoAdapter
 
 @BindingAdapter("bind:myTodoItems")
 fun setTodoItems(todoRecyclerView: RecyclerView, todoItems: List<TodoItem>?) {
